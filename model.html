@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menuja e Restorantit</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .menu-container {
+            width: 60%;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #d35400;
+        }
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+        .price {
+            font-weight: bold;
+            color: #27ae60;
+        }
+        .menu-link {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+        }
+        .menu-link:hover {
+            color: #d35400;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <h1>Menuja e Restorantit</h1>
+        <div class="menu-item">
+            <a href="#pica-margherita" class="menu-link"><span>Pica Margherita</span></a>
+            <span class="price">€7.50</span>
+        </div>
+        <div class="menu-item">
+            <a href="#pasta-carbonara" class="menu-link"><span>Pasta Carbonara</span></a>
+            <span class="price">€8.00</span>
+        </div>
+        <div class="menu-item">
+            <a href="#salata-cezar" class="menu-link"><span>Salatë Cezar</span></a>
+            <span class="price">€6.50</span>
+        </div>
+        <div class="menu-item">
+            <a href="#biftek-patate" class="menu-link"><span>Biftek me patate</span></a>
+            <span class="price">€12.00</span>
+        </div>
+        <div class="menu-item">
+            <a href="#tiramisu" class="menu-link"><span>Tiramisu</span></a>
+            <span class="price">€4.50</span>
+        </div>
+    </div>
+
+    <!-- Sekcione të artikujve -->
+    <div id="pica-margherita">
+        <h2>Pica Margherita</h2>
+        <p>Një picë klasike me domate, mozzarella dhe borzilok.</p>
+    </div>
+    <div id="pasta-carbonara">
+        <h2>Pasta Carbonara</h2>
+        <p>Pasta me krem, pancetta dhe djathë pecorino.</p>
+    </div>
+    <div id="salata-cezar">
+        <h2>Salatë Cezar</h2>
+        <p>Salatë me marule, pule të pjekur, djathë parmezan dhe salcë Cezar.</p>
+    </div>
+    <div id="biftek-patate">
+        <h2>Biftek me patate</h2>
+        <p>Biftek i pjekur shoqëruar me patate të skuqura.</p>
+    </div>
+    <div id="tiramisu">
+        <h2>Tiramisu</h2>
+        <p>Përfundoni vakti me një desert të ëmbël italian tiramisu.</p>
+    </div>
+</body>
+</html>
