@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menuja e Restorantit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Menuja e Restorantit</h1>
+
+        <div class="tabs">
+            <button class="tab-button" onclick="showSection('ushqime')">Ushqimet</button>
+            <button class="tab-button" onclick="showSection('pije')">Pijet</button>
+        </div>
+
+        <div class="menu-section" id="ushqime">
+            <h2>Ushqimet</h2>
+            <div class="category">
+                <button class="category-button" onclick="showCategory('pica')">Pica</button>
+                <button class="category-button" onclick="showCategory('pastas')">Pasta</button>
+            </div>
+            <div class="menu-items" id="pica">
+                <div class="menu-item">
+                    <h3>Pica Margherita</h3>
+                    <p>Çmimi: 7.50€</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Pica Peperoni</h3>
+                    <p>Çmimi: 8.00€</p>
+                </div>
+            </div>
+            <div class="menu-items" id="pastas" style="display: none;">
+                <div class="menu-item">
+                    <h3>Pasta Carbonara</h3>
+                    <p>Çmimi: 8.50€</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Pasta Bolognese</h3>
+                    <p>Çmimi: 9.00€</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-section" id="pije" style="display: none;">
+            <h2>Pijet</h2>
+            <div class="category">
+                <button class="category-button" onclick="showCategory('ngrohta')">Ngrohta</button>
+                <button class="category-button" onclick="showCategory('freskuese')">Freskuese</button>
+                <button class="category-button" onclick="showCategory('vere')">Vere</button>
+                <button class="category-button" onclick="showCategory('birra')">Birra</button>
+            </div>
+            <div class="menu-items" id="ngrohta">
+                <div class="menu-item">
+                    <h3>Kafe Espresso</h3>
+                    <p>Çmimi: 2.00€</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Çaj i Ngrohtë</h3>
+                    <p>Çmimi: 1.50€</p>
+                </div>
+            </div>
+            <div class="menu-items" id="freskuese" style="display: none;">
+                <div class="menu-item">
+                    <h3>Limoni i Freskët</h3>
+                    <p>Çmimi: 3.00€</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Ujë Mineral</h3>
+                    <p>Çmimi: 1.00€</p>
+                </div>
+            </div>
+            <div class="menu-items" id="vere" style="display: none;">
+                <div class="menu-item">
+                    <h3>Vera e Kuqe</h3>
+                    <p>Çmimi: 10.00€</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Vera e Bardhë</h3>
+                    <p>Çmimi: 9.00€</p>
+                </div>
+            </div>
+            <div class="menu-items" id="birra" style="display: none;">
+                <div class="menu-item">
+                    <h3>Birra e Ftohtë</h3>
+                    <p>Çmimi: 2.50€</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Birra Artizanale</h3>
+                    <p>Çmimi: 3.00€</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
